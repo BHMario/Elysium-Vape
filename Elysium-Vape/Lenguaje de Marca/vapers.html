@@ -7,22 +7,42 @@
   <link rel="stylesheet" href="Estilos/StyleVapers.css" />
 </head>
 <body>
+  <!-- ENCABEZADO -->
   <header>
     <div class="logo">
-      <a href="Index.html"><img src="img/logo.png" alt="Elysium Vape" /></a>
-      <span>Elysium Vape</span>
-    </div>
-    
-  
+        <a href="Index.html"><img src="img/logo.png" alt="Elysium Vape" />
+        </a>
+        <span>Elysium Vape</span>
+    </div>           
+    <input type="text" class="barra-busqueda" placeholder="Buscar productos..." />
+    <nav>
+      <button> <img src="img/carrito.png" alt="carrito"></button>
+      <button><img src="img/usuario.png" alt="usuario"></button>
+      <button><img src="img/favorito.png" alt="favorito"></button>
+      
+    </nav>
   </header>
+
+  <!-- MENÚ PRINCIPAL -->
+  <nav class="menu-principal">
+    <ul>
+      <li><a href="Index.html">Inicio</a></li>
+      <li><a href="liquidos.html">Líquidos</a></li>
+      <li><a href="vapers.html">Vapers</a></li>
+      <li><a href="personalizarLiquidos.html">Personalizar sabores</a></li>
+      <li><a href="#">Novedades</a></li>
+      <li><a href="#">Próximamente</a></li>
+      <li><a href="#">Ofertas</a></li>
+    </ul>
+  </nav>
 
   <main>
     <!-- Sección completa de Vapers y Personalización pegada acá -->
      <!-- SECCIÓN VAPERS -->
 <section id="vapers">
-    <h2 style="color: #d4af37;">Vapers</h2>
+    <h2 >Vapers</h2>
   
-    <h3 style="color: #ffffff;">Desechables</h3>
+    <h3 >Desechables</h3>
     <p>Vapers listos para usar. Ideales para quienes buscan comodidad y practicidad.</p>
     <div class="galeria-productos">
       <div class="producto">
@@ -35,7 +55,7 @@
       </div>
     </div>
   
-    <h3 style="color: #ffffff;">Reutilizables</h3>
+    <h3 >Reutilizables</h3>
     <p>Vapers recargables compatibles con sales de nicotina y líquidos tradicionales.</p>
     <div class="galeria-productos">
       <div class="producto">
@@ -43,7 +63,7 @@
         <p>Vaper Reutilizable - Negro Mate</p>
       </div>
       <div class="producto">
-        <img src="img/vape_reutilizable2.avif" alt="Vaper dorado">
+        <img src="img/vape_reutilizable2.png" alt="Vaper dorado">
         <p>Vaper Reutilizable - Dorado Luxe</p>
       </div>
     </div>
@@ -53,7 +73,7 @@
   <section id="personalizacion">
     <h2 style="color: #d4af37;">Personalización de Vapers</h2>
     <p>Diseña tu vaper ideal eligiendo sabor, color, y nivel de nicotina.</p>
-    <form style="margin-top: 1rem;">
+    <div class="personalizado"><form style="margin-top: 1rem;">
       <label for="color" style="color: #ffffff;">Color del vaper:</label><br />
       <select id="color">
         <option>Negro</option>
@@ -68,22 +88,25 @@
   
       <label for="nicotina" style="color: #ffffff;">Nivel de nicotina (mg):</label><br />
       <input type="range" id="nicotina" min="0" max="30" step="10" value="20" />
-      <div class="nicotina-options">
-        <span>0 mg</span>
-        <span>10 mg</span>
-        <span>20 mg</span>
-        <span>30 mg</span>
-      </div>
+      
       <span id="valor-nicotina">20 mg</span>
       <br><br>
       <button type="submit">Guardar Personalización</button>
+    </div>
     </form>
   </section>
   
   </main>
 
   <footer>
-    <p style="text-align:center; padding: 2rem;">© Elysium Vape</p>
+    <form>
+      <label for="boletin">Suscríbete a nuestro boletín:</label>
+      <input type="email" id="boletin" placeholder="Tu correo electrónico" />
+      <button type="submit">Suscribirse</button>
+    </form>
+    <div class="informacion">
+      <p>Sitemap | <a href="contacto.html">Contacto </a>| Redes Sociales | Política de privacidad</p>
+    </div>
   </footer>
 
   <script src="Funcionalidades/vaper.js"></script>

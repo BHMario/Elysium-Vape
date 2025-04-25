@@ -9,19 +9,30 @@
 <body>
 
   <header>
-    <h1>Elysium Vape</h1>
+    <div class="logo">
+        <a href="Index.html"><img src="img/logo.png" alt="Elysium Vape" />
+        </a>
+        <span>Elysium Vape</span>
+    </div>           
+    <input type="text" class="barra-busqueda" placeholder="Buscar productos..." />
+    <nav>
+      <button> <img src="img/carrito.png" alt="carrito"></button>
+      <button><img src="img/usuario.png" alt="usuario"></button>
+      <button><img src="img/favorito.png" alt="favorito"></button>
+      
+    </nav>
   </header>
 
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Líquidos</a>
-    <a href="#">Vapers</a>
-    <a href="#">Personalización</a>
-    <a href="#">Elegir sabores</a>
-    <a href="#">Novedades</a>
-    <a href="#">Próximamente</a>
-    <a href="#">Contacto</a>
-    <a href="#">Ofertas</a>
+  <nav class="menu-principal">
+    <ul>
+      <li><a href="Index.html">Inicio</a></li>
+      <li><a href="liquidos.html">Líquidos</a></li>
+      <li><a href="vapers.html">Vapers</a></li>
+      <li><a href="personalizarLiquidos.html">Personalizar Sabores</a></li>
+      <li><a href="#">Novedades</a></li>
+      <li><a href="#">Próximamente</a></li>
+      <li><a href="#">Ofertas</a></li>
+    </ul>
   </nav>
 
   <section class="filtros">
@@ -84,6 +95,17 @@
     </div>
     <!-- Agrega más productos aquí -->
   </section>
+
+  <footer>
+    <form>
+      <label for="boletin">Suscríbete a nuestro boletín:</label>
+      <input type="email" id="boletin" placeholder="Tu correo electrónico" />
+      <button type="submit">Suscribirse</button>
+    </form>
+    <div class="informacion">
+      <p>Sitemap | <a href="contacto.html">Contacto </a> | Redes Sociales | Política de privacidad</p>
+    </div>
+  </footer>
 
   <script src="Funcionalidades/liquidos.js"></script>
 </body>

@@ -1,7 +1,11 @@
 const sabores = [
-    "Fresa", "Menta", "Mango", "Chocolate", "Limón", "Vainilla",
-    "Café", "Coco", "Manzana", "Canela", "Bourbon", "Sandía",
-    "Piña", "Frambuesa", "Uva", "Caramelo", "Melón"
+  "Vainilla", "","", "", "", "", "", "", "", "", "", "", "Fresa",
+  "Mango", "Sandía", "", "", "", "", "", "Uva", "Menta", "Lenteja", "Piña colada", "Chocolate", "Café",
+  "Caramelo", "Canela", "", "", "", "", "", "Limón", "Naranja", "Manzana verde", "Manzana roja", "Blueberry", "Frambuesa",
+  "Melón", "Coco", "Chicle", "Yogur", "Galleta", "Pastel", "Helado de vainilla", "Tiramisú", "Cheescake", "Mocca", "Capuccino", "Té verde", "Té negro",
+  "Red bull", "Monster", "Coca-Cola", "Cerveza", "Cerveza de raíz", "Whisky", "RonCola", "Vino", "Sangría", "Mojito", "Margarita", "Limonada", "Pepino y Limón",
+  "Granada", "Maracuyá", "Guayaba", "Kiwi", "Lychee", "Níspero", "Durazno", "Almendra", "Pistacho", "Avellana", "Nuez", "Miel", "Azúcar tostada",
+  "Dulce de Leche", "Crema irlandesa", "Menta y chocoalte", "Galleta de avena", "Donut glaseado", "Cotton candy", "Marshmallow", "Chicle uva", "Blue razz", "Mango y chile", "Tamarindo", "Chamoy", "Pepino enchilado"
 ];
   
 const maxSeleccion = 3;
@@ -10,12 +14,19 @@ let seleccionados = [];
 const tabla = document.getElementById("tabla-sabores");
   
 sabores.forEach(sabor => {
-    const div = document.createElement("div");
-    div.classList.add("sabor");
+  const div = document.createElement("div");
+  div.classList.add("sabor");
+
+  if (sabor === "") {
+    div.classList.add("espacio-vacio"); // clase especial
+  } else {
     div.textContent = sabor;
     div.onclick = () => seleccionarSabor(div, sabor);
-    tabla.appendChild(div);
+  }
+
+  tabla.appendChild(div);
 });
+
   
 function seleccionarSabor(elemento, sabor) {
     const index = seleccionados.indexOf(sabor);
