@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personaliza tu líquido - Elysium Vape</title>
+  <link rel="stylesheet" href="Estilos/Style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Elysium Vape" />
+      <span>Elysium Vape</span>
+    </div>
+    <input type="text" class="barra-busqueda" placeholder="Buscar productos..." />
+  </header>
+
+  <nav class="menu-principal">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#">Líquidos</a></li>
+      <li><a href="#">Vapers</a></li>
+      <li><a href="#">Personalizar Vapers</a></li>
+      <li><a href="personalizarLiquidos.html">Personalizar Sabores</a></li>
+      <li><a href="#">Novedades</a></li>
+      <li><a href="#">Próximamente</a></li>
+      <li><a href="#">Contacto</a></li>
+      <li><a href="#">Ofertas</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Selecciona hasta 3 sabores</h2>
+    <div id="tabla-sabores" class="tabla-sabores">
+      <!-- Añadir aqui los sabores -->
+    </div>
+    <div class="acciones">
+      <button onclick="añadirAlCarrito()">Añadir al carrito</button>
+      <button onclick="reiniciarSeleccion()">Reiniciar selección</button>
+    </div>
+  </main>
+
+  <script src="Funcionalidades/personalizarLiquidos.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elysium Vape</title>
+  <link rel="stylesheet" href="Estilos/Style.css" />
+</head>
+<body>
+  <!-- VENTANAS EMERGENTES -->
+  <div id="modal-edad" class="modal">
+    <div class="contenido-modal">
+        <p class="Edad">¿Eres mayor de 18 años?</p>
+        <button onclick="confirmarEdad(true)">Soy mayor de 18 años</button>
+        <button onclick="confirmarEdad(false)">Salir</button>
+        </div>
+    </div>
+    <div id="popup-cookies" class="emergente">
+        <div class="contenido-modal">
+            <p class="Edad">Este sitio utiliza cookies. ¿Aceptas?</p>
+            <button onclick="aceptarCookies()">Aceptar</button>
+        </div>
+    </div>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <div class="logo">
+        <img src="img/logo.png" alt="Elysium Vape" />
+        <span>Elysium Vape</span>
+    </div>           
+    <input type="text" class="barra-busqueda" placeholder="Buscar productos..." />
+    <nav>
+      <button>Iniciar sesión</button>
+      <button>Favoritos</button>
+      <button>Carrito</button>
+    </nav>
+  </header>
+
+  <!-- MENÚ PRINCIPAL -->
+  <nav class="menu-principal">
+    <ul>
+      <li><a href="liquidos.html">Líquidos</a></li>
+      <li><a href="vapers.html">Vapers</a></li>
+      <li><a href="#">Personalizar Vapers</a></li>
+      <li><a href="personalizarLiquidos.html">Personalizar Sabores</a></li>
+      <li><a href="#">Novedades</a></li>
+      <li><a href="#">Próximamente</a></li>
+      <li><a href="#">Contacto</a></li>
+      <li><a href="#">Ofertas</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <section>
+      <h2>Bienvenido a Elysium Vape</h2>
+      <p>Explora nuestros productos premium para vapeadores exigentes.</p>
+    </section>
+    <section class="galeria-productos">
+        <div class="producto">
+          <img src="img/vape1.jpg" alt="Vaper dorado premium">
+          <p>Vaper dorado premium - edición limitada</p>
+        </div>
+        <div class="producto">
+          <img src="img/liquido1.jpg" alt="Líquido de sabor vainilla y canela">
+          <p>Líquido gourmet - Vainilla & Canela</p>
+        </div>
+        <div class="producto">
+          <img src="img/vape2.jpg" alt="Vaper negro mate">
+          <p>Diseño negro mate - Elegancia y potencia</p>
+        </div>
+      </section>      
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <form>
+      <label for="boletin">Suscríbete a nuestro boletín:</label>
+      <input type="email" id="boletin" placeholder="Tu correo electrónico" />
+      <button type="submit">Suscribirse</button>
+    </form>
+    <div class="informacion">
+      <p>Sitemap | Contacto | Redes Sociales | Política de privacidad</p>
+    </div>
+  </footer>
+
+  <script src="Funcionalidades/Script.js"></script>
+</body>
+</html>

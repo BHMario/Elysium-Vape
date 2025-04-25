@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vapers - Elysium Vape</title>
+  <link rel="stylesheet" href="Estilos/StyleVapers.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="Index.html"><img src="img/logo.png" alt="Elysium Vape" /></a>
+      <span>Elysium Vape</span>
+    </div>
+    
+  
+  </header>
+
+  <main>
+    <!-- Sección completa de Vapers y Personalización pegada acá -->
+     <!-- SECCIÓN VAPERS -->
+<section id="vapers">
+    <h2 style="color: #d4af37;">Vapers</h2>
+  
+    <h3 style="color: #ffffff;">Desechables</h3>
+    <p>Vapers listos para usar. Ideales para quienes buscan comodidad y practicidad.</p>
+    <div class="galeria-productos">
+      <div class="producto">
+        <img src="img/vape_desechable.png" alt="Vaper desechable menta">
+        <p>Vaper Desechable - Sabor Menta</p>
+      </div>
+      <div class="producto">
+        <img src="img/vape_desechable2.png" alt="Vaper desechable fresa">
+        <p>Vaper Desechable - Fresa Intensa</p>
+      </div>
+    </div>
+  
+    <h3 style="color: #ffffff;">Reutilizables</h3>
+    <p>Vapers recargables compatibles con sales de nicotina y líquidos tradicionales.</p>
+    <div class="galeria-productos">
+      <div class="producto">
+        <img src="img/vape_reutilizable.png" alt="Vaper reutilizable negro mate">
+        <p>Vaper Reutilizable - Negro Mate</p>
+      </div>
+      <div class="producto">
+        <img src="img/vape_reutilizable2.avif" alt="Vaper dorado">
+        <p>Vaper Reutilizable - Dorado Luxe</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- SECCIÓN PERSONALIZACIÓN -->
+  <section id="personalizacion">
+    <h2 style="color: #d4af37;">Personalización de Vapers</h2>
+    <p>Diseña tu vaper ideal eligiendo sabor, color, y nivel de nicotina.</p>
+    <form style="margin-top: 1rem;">
+      <label for="color" style="color: #ffffff;">Color del vaper:</label><br />
+      <select id="color">
+        <option>Negro</option>
+        <option>Dorado</option>
+        <option>Rojo</option>
+        <option>Azul</option>
+        <option>Personalizado</option>
+      </select><br /><br />
+  
+      <label for="sabor" style="color: #ffffff;">Sabor del líquido:</label><br />
+      <input type="text" id="sabor" placeholder="Ej. Frutilla, Mango, Caramelo..." /><br /><br />
+  
+      <label for="nicotina" style="color: #ffffff;">Nivel de nicotina (mg):</label><br />
+      <input type="range" id="nicotina" min="0" max="30" step="10" value="20" />
+      <div class="nicotina-options">
+        <span>0 mg</span>
+        <span>10 mg</span>
+        <span>20 mg</span>
+        <span>30 mg</span>
+      </div>
+      <span id="valor-nicotina">20 mg</span>
+      <br><br>
+      <button type="submit">Guardar Personalización</button>
+    </form>
+  </section>
+  
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding: 2rem;">© Elysium Vape</p>
+  </footer>
+
+  <script src="Funcionalidades/vaper.js"></script>
+</body>
+</html>
