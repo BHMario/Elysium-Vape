@@ -124,8 +124,8 @@ footer {
 
 .contenido-modal {
     background-color: #1a1a1a;
-    padding: 2rem;
     border-radius: 10px;
+    padding: auto;
     text-align: center;
 }
 
