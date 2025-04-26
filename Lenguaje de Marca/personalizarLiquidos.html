@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personaliza tu líquido - Elysium Vape</title>
+  <link rel="stylesheet" href="Estilos/StylePersonalizarLiquidos.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <a href="Index.html"><img src="img/logo.png" alt="Elysium Vape" /></a>
+        <span>Elysium Vape</span>
+    </div>           
+    <input type="text" class="barra-busqueda" placeholder="Buscar productos..." />
+    <nav>
+      <button><img src="img/carrito.png" alt="carrito"></button>
+      <button><img src="img/usuario.png" alt="usuario"></button>
+      <button><img src="img/favorito.png" alt="favorito"></button>
+    </nav>
+  </header>
+
+  <nav class="menu-principal">
+    <ul>
+      <li><a href="Index.html">Inicio</a></li>
+      <li><a href="liquidos.html">Líquidos</a></li>
+      <li><a href="vapers.html">Vapers</a></li>
+      <li><a href="personalizarLiquidos.html">Personalizar Sabores</a></li>
+      <li><a href="#">Novedades</a></li>
+      <li><a href="#">Próximamente</a></li>
+      <li><a href="#">Ofertas</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Selecciona hasta 3 sabores</h2>
+    <div id="tabla-sabores" class="tabla-sabores">
+
+    </div>
+    <div class="acciones">
+      <button onclick="añadirAlCarrito()">Añadir al carrito</button>
+      <button onclick="reiniciarSeleccion()">Reiniciar selección</button>
+    </div>
+  </main>
+
+  <footer>
+    <form>
+      <label for="boletin">Suscríbete a nuestro boletín:</label>
+      <input type="email" id="boletin" placeholder="Tu correo electrónico" />
+      <button type="submit">Suscribirse</button>
+    </form>
+    <div class="informacion">
+      <p>Sitemap | <a href="contacto.html">Contacto </a> | Redes Sociales | Política de privacidad</p>
+    </div>
+  </footer>
+
+  <script src="Funcionalidades/personalizarLiquidos.js"></script>
+</body>
+</html>
