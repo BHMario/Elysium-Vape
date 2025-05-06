@@ -15,12 +15,6 @@ header {
     align-items: center;
 }
 
-nav img{
-    width: 20px;
-    height: 20px;
-    padding: 3px;   
-}
-
 .logo {
     display: flex;
     align-items: center;
@@ -39,6 +33,37 @@ nav img{
     font-weight: bold;
     font-family: 'Georgia', serif;
     color: #d4af37;
+}
+
+nav img {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #d4af37;
+    text-align: center;
+}
+
+section p {
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+button {
+    background-color: #d4af37;
+    color: #0c0c0c;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #bfa133;
 }
 
 .barra-busqueda {
@@ -77,58 +102,8 @@ nav img{
     border-radius: 5px;
     color: #ffffff;
 }
-  
-.filtros {
-    background-color: #1a1a1a;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-}
-  
-.grupo-filtro {
-    position: relative;
-}
-  
-.btn-filtro {
-    background: none;
-    border: 2px solid #f1c40f;
-    color: #f1c40f;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-  
-.submenu {
-    display: none;
-    position: absolute;
-    top: 2.8rem;
-    left: 0;
-    background-color: #222;
-    border: 1px solid #555;
-    border-radius: 5px;
-    z-index: 100;
-    min-width: 150px;
-}
-  
-.submenu a {
-    display: block;
-    padding: 0.5rem;
-    color: #f1c40f;
-    text-decoration: none;
-}
-  
-.submenu a:hover {
-    background-color: #333;
-}
-  
-.grupo-filtro:hover  .submenu, .grupo-filtro .submenu:hover {
-    display: block;
-}
-  
-.galeria-productos {
+
+.grid-proximamente {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -137,7 +112,7 @@ nav img{
     padding-bottom: 100px;
 }
 
-.producto {
+.proximo {
     background-color: #1a1a1a;
     padding: 1rem;
     border-radius: 10px;
@@ -146,40 +121,26 @@ nav img{
     color: #d4af37;
 }
 
-.producto img {
+.proximo img {
     width: 100%;
     border-radius: 8px;
 }
-  
-.producto h3 {
-    margin: 0.5rem 0;
-    font-size: 1.1rem;
-}
-  
-.producto p {
-    font-size: 0.9rem;
-    color: #ccc;
-}
 
-.carrito {
-    width: 40px;
-    height: 40px;
-    padding-left: 110px;
-}
-
-button {
+.proximo button {
+    margin-top: 1rem;
     background-color: #d4af37;
     color: #0c0c0c;
     border: none;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
+    padding: 0.5rem 1rem;
 }
 
-button:hover {
+.proximo button:hover {
     background-color: #bfa133;
 }
-  
+
 footer {
     background-color: #1a1a1a;
     padding: 2rem;
@@ -193,14 +154,15 @@ footer {
     max-width: 100%;
 }
 
-a{
+a {
     text-decoration: none;
-    color : white;
+    color: white;
 }
 
-a:hover{
+a:hover {
     color: #d4af37;
 }
+
 
 .modal-login {
     display: none;

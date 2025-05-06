@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ofertas - Elysium Vape</title>
+  <link rel="stylesheet" href="Estilos/StyleOfertas.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="Index.html"><img src="img/logo.png" alt="Elysium Vape" /></a>
+            <span>Elysium Vape</span>
+        </div>           
+        <input type="text" class="barra-busqueda" placeholder="Buscar productos..." />
+        <nav>
+          <button><img src="img/carrito.png" alt="carrito"></button>
+          <button onclick="verificarLogin()">
+            <img id="user-icon-img" src="img/usuario.png" alt="usuario">
+          </button>          
+          <button><img src="img/favorito.png" alt="favorito"></button>
+        </nav>
+    </header>
+
+    <nav class="menu-principal">
+    <ul>
+      <li><a href="Index.html">Inicio</a></li>
+      <li><a href="liquidos.html">Líquidos</a></li>
+      <li><a href="vapers.html">Vapers</a></li>
+      <li><a href="personalizarLiquidos.html">Personalizar Sabores</a></li>
+      <li><a href="novedades.html">Novedades</a></li>
+      <li><a href="proximamente.html">Próximamente</a></li>
+      <li><a href="ofertas.html">Ofertas</a></li>
+    </ul>
+  </nav>
+
+<main>
+  <section>
+    <h2>Ofertas Especiales</h2>
+    <p>Encuentra las mejores ofertas sobre nuestros vapers premium y los mejores sabores del mercado</p>
+  </section>
+  <section class="grid-ofertas">
+    <div class="oferta">
+        <img src="img/vaper1.jpg" alt="Vaper Golden Lux">
+        <h3>Vaper Golden Lux</h3>
+        <p>Dulzura cremosa con un toque especiado. 50ml - 0mg - 50/50</p>
+        <div class="precio">
+          <span class="precio-original">50€</span> 
+          <br><strong>35€</strong>
+        </div>
+        <div class="carrito"> <button> <img src="img/carrito.png" alt="carrito"></button></div>
+    </div>
+    <div class="oferta">
+        <img src="img/liquido1.jpg" alt="Líquido Premium Vainilla">
+        <h3>Líquido Premium Vainilla</h3>
+        <p>Dulzura cremosa con un toque especiado. 50ml - 0mg - 50/50</p>
+        <div class="precio">
+          <span class="precio-original">20€</span> 
+          <br><strong>12€</strong>
+        </div>
+        <div class="carrito"> <button> <img src="img/carrito.png" alt="carrito"></button></div>
+    </div>
+    <div class="oferta">
+        <img src="img/pack1.jpg" alt="Pack: Vaper + 2 Líquidos">
+        <h3>Pack: Vaper + 2 Líquidos</h3>
+        <p>Dulzura cremosa con un toque especiado. 50ml - 0mg - 50/50</p>
+        <div class="precio">
+          <span class="precio-original">90€</span> 
+          <br><strong>65€</strong>
+        </div>
+        <div class="carrito"> <button> <img src="img/carrito.png" alt="carrito"></button></div>
+    </div>
+    <div class="oferta">
+        <img src="rutaImagen" alt="Líquido Tropical Mix">
+        <h3>Líquido Tropical Mix</h3>
+        <p>Dulzura cremosa con un toque especiado. 50ml - 0mg - 50/50</p>
+        <div class="precio">
+          <span class="precio-original">18€</span> 
+          <br><strong>10€</strong>
+        </div>
+        <div class="carrito"> <button> <img src="img/carrito.png" alt="carrito"></button></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+    <form>
+      <label for="boletin">Suscríbete a nuestro boletín:</label>
+      <input type="email" id="boletin" placeholder="Tu correo electrónico" />
+      <button type="submit">Suscribirse</button>
+    </form>
+    <div class="informacion">
+      <p>Sitemap | <a href="contacto.html">Contacto </a> | Redes Sociales | Política de privacidad</p>
+    </div>
+</footer>
+
+<!-- Modal para inicio de sesión o registro -->
+<div id="login-modal" class="modal-login">
+  <div class="modal-content">
+    <span class="close" onclick="cerrarModal()">&times;</span>
+    <h2>Inicia sesión para continuar</h2>
+    <p>Debes iniciar sesión o registrarte para acceder a esta función.</p>
+    <div class="modal-buttons">
+      <a href="registro.html" class="btn">Registrarse</a>
+      <a href="login.html" class="btn">Iniciar sesión</a>
+    </div>
+  </div>
+</div> 
+
+<script src="Funcionalidades/ofertas.js"></script>
+
+</body>
+</html>

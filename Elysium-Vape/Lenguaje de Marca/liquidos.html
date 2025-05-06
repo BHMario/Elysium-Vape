@@ -17,7 +17,9 @@
     <input type="text" class="barra-busqueda" placeholder="Buscar productos..." />
     <nav>
       <button><img src="img/carrito.png" alt="carrito"></button>
-      <button><img src="img/usuario.png" alt="usuario"></button>
+      <button onclick="verificarLogin()">
+        <img id="user-icon-img" src="img/usuario.png" alt="usuario">
+      </button>      
       <button><img src="img/favorito.png" alt="favorito"></button>
     </nav>
   </header>
@@ -29,9 +31,9 @@
       <li><a href="liquidos.html">Líquidos</a></li>
       <li><a href="vapers.html">Vapers</a></li>
       <li><a href="personalizarLiquidos.html">Personalizar Sabores</a></li>
-      <li><a href="#">Novedades</a></li>
-      <li><a href="#">Próximamente</a></li>
-      <li><a href="#">Ofertas</a></li>
+      <li><a href="novedades.html">Novedades</a></li>
+      <li><a href="proximamente.html">Próximamente</a></li>
+      <li><a href="ofertas.html">Ofertas</a></li>
     </ul>
   </nav>
 
@@ -110,6 +112,19 @@
       <p>Sitemap | <a href="contacto.html">Contacto </a> | Redes Sociales | Política de privacidad</p>
     </div>
   </footer>
+
+<!-- Modal para inicio de sesión o registro -->
+<div id="login-modal" class="modal-login">
+  <div class="modal-content">
+    <span class="close" onclick="cerrarModal()">&times;</span>
+    <h2>Inicia sesión para continuar</h2>
+    <p>Debes iniciar sesión o registrarte para acceder a esta función.</p>
+    <div class="modal-buttons">
+      <a href="registro.html" class="btn">Registrarse</a>
+      <a href="login.html" class="btn">Iniciar sesión</a>
+    </div>
+  </div>
+</div>
 
   <script src="Funcionalidades/liquidos.js"></script>
 </body>

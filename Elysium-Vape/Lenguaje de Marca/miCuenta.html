@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Cuenta - Elysium Vape</title>
+  <link rel="stylesheet" href="Estilos/StyleMiCuenta.css" />
+</head>
+<body>
+  <div class="cuenta-container">
+    <button class="btn-volver" onclick="history.back()"> &#8592; </button>
+    <h1>Mi Cuenta</h1>
+
+    <div class="perfil">
+      <img id="avatar-preview" src="img/usuario.png" alt="Avatar" />
+      <input type="file" id="avatar-upload" accept="image/*">
+    </div>
+
+    <form id="form-cuenta">
+      <label>Nombre</label>
+      <input type="text" id="nombre" required>
+
+      <label>Correo electrónico</label>
+      <input type="email" id="correo" required>
+
+      <label>Dirección de envío</label>
+      <input type="text" id="direccion">
+
+      <label>Método de pago preferido</label>
+      <select id="pago">
+        <option value="">Selecciona uno</option>
+        <option value="tarjeta">Tarjeta de crédito</option>
+        <option value="paypal">PayPal</option>
+      </select>
+
+      <button type="submit">Guardar cambios</button>
+    </form>
+
+    <div class="historial">
+      <h2>Historial de pedidos</h2>
+      <ul id="lista-pedidos">
+        <li>No hay pedidos aún.</li>
+      </ul>
+    </div>
+
+    <button id="cerrar-sesion">Cerrar sesión</button>
+  </div>
+
+  <script src="Funcionalidades/miCuenta.js"></script>
+</body>
+</html>

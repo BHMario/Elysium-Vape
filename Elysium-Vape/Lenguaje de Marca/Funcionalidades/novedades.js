@@ -1,17 +1,14 @@
-// Actualización en tiempo real del valor de nicotina
 document.addEventListener("DOMContentLoaded", function () {
-    const slider = document.getElementById("nicotina");
-    const output = document.getElementById("valor-nicotina");
+    const botones = document.querySelectorAll(".btn-carrito");
   
-    // Inicializa el valor mostrado
-    output.textContent = `${slider.value} mg`;
-  
-    // Cambia el valor a medida que se mueve la barra
-    slider.addEventListener("input", function () {
-        output.textContent = `${slider.value} mg`;
+    botones.forEach((boton) => {
+      boton.addEventListener("click", () => {
+        alert("Producto añadido al carrito");
+        // Aquí podrías añadir lógica real de carrito si tienes uno implementado
+      });
     });
   });
-
+  
 // Comprobar si el usuario está logeado (guardado en localStorage)
 function estaLogeado() {
   return localStorage.getItem("usuarioLogeado") === "true";
