@@ -28,11 +28,18 @@ document.addEventListener("DOMContentLoaded", () => {
     opciones.forEach((opcion) => {
       opcion.addEventListener("click", (e) => {
         e.preventDefault(); // Evita el comportamiento por defecto del enlace
-        const categoria = opcion.textContent.toLowerCase(); // Obtiene la categoría seleccionada
+        const filtro = opcion.textContent.toLowerCase(); // Obtiene el filtro seleccionado
 
         productos.forEach((producto) => {
-          // Muestra u oculta productos según la categoría
-          if (producto.dataset.categoria === categoria || categoria === "todos") {
+          // Muestra u oculta productos según el filtro seleccionado
+          const categoria = producto.dataset.categoria || "";
+          const descripcion = producto.querySelector("p").textContent.toLowerCase();
+
+          if (
+            categoria.includes(filtro) ||
+            descripcion.includes(filtro) ||
+            filtro === "todos"
+          ) {
             producto.style.display = "block";
           } else {
             producto.style.display = "none";
